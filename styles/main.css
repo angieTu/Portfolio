@@ -59,7 +59,7 @@
       .footer .footer-list .footer-list-item > a > i {
         color: #cceabb;
         margin-right: 12px;
-        font-size: 20px; }
+        font-size: 15px; }
 
 .form {
   display: flex;
@@ -138,28 +138,37 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 69px 44px; }
+  padding: 44px; }
   .projects .projects-title {
     font-family: "Roboto", sans-serif;
     font-size: 39px; }
   .projects .projects-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Droid Serif", serif; }
+    justify-content: center;
+    font-family: "Droid Serif", serif;
+    flex-wrap: wrap; }
     .projects .projects-container .project-box {
-      width: 50%;
-      text-align: center; }
+      width: 25%;
+      overflow: hidden;
+      margin: 33px 56px;
+      border-radius: 10px;
+      padding: 40px 5px; }
       .projects .projects-container .project-box > a > img {
         width: 100%;
         height: 100%;
-        object-fit: scale-down; }
+        object-fit: cover;
+        margin: -22px 0;
+        border-radius: 10px;
+        transition: 0.5s;
+        filter: grayscale(2); }
+        .projects .projects-container .project-box > a > img:hover {
+          filter: grayscale(0); }
 
 .skills {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 69px 44px;
+  padding: 44px;
   background-color: #cceabb;
   box-shadow: 10px 0px 27px 10px gray; }
   .skills .skills-title {
