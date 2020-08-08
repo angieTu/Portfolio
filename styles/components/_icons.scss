@@ -1,0 +1,32 @@
+.icon-skills {
+  position: absolute;
+  transition: 0.3s;
+  bottom: -21px;
+  left: 6px;
+
+  &:hover {
+    bottom: 18px;
+  }
+}
+
+.icon-contact {
+  position: absolute;
+  left: 20px;
+  bottom: -21px;
+  transition: 0.3s;
+
+  &:hover {
+    bottom: 18px;
+  }
+}
+
+.icon-project {
+  position: absolute;
+  transition: 0.3s;
+  bottom: -21px;
+  left: 17px;
+
+  &:hover {
+    bottom: 18px;
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  font-family: $secondary-font;
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  color: $main-text-color;
+  font-size: 12px;
+  padding: 0 0 29px 12px;
+
+  .footer-list {
+    list-style: none;
+    padding-left: 0px;
+
+    .footer-list-item {
+      margin: 8px 11px;
+
+      & > a > i {
+        color: $secondary-color;
+        margin-right: 12px;
+        font-size: 20px;
+      }
+    }
+  }
+}

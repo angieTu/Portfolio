@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  background-color: $main-color;
+  height: 69px;
+  font-family: $main-font;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  line-height: 46px;
+  overflow: hidden;
+  z-index: 10;
+
+  .header-nav {
+    padding-right: 36px;
+
+    .header-nav-list {
+      padding-right: 22px;
+      position: relative;
+
+      .header-nav-list-item {
+        list-style: none;
+        float: right;
+        margin-left: 67px;
+        position: relative;
+        width: 65px;
+        height: 49px;
+      }
+    }
+  }
+}

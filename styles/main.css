@@ -1,0 +1,219 @@
+.header {
+  display: flex;
+  background-color: #3f3f44;
+  height: 69px;
+  font-family: "Roboto", sans-serif;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  line-height: 46px;
+  overflow: hidden;
+  z-index: 10; }
+  .header .header-nav {
+    padding-right: 36px; }
+    .header .header-nav .header-nav-list {
+      padding-right: 22px;
+      position: relative; }
+      .header .header-nav .header-nav-list .header-nav-list-item {
+        list-style: none;
+        float: right;
+        margin-left: 67px;
+        position: relative;
+        width: 65px;
+        height: 49px; }
+
+.about {
+  margin-top: 50px;
+  padding: 89px;
+  font-family: "Droid Serif", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cceabb;
+  box-shadow: 10px 0px 27px 10px gray; }
+  .about .about-info {
+    font-size: 22px; }
+  .about .about-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 39px; }
+  .about .about-img {
+    height: 21%;
+    width: 20%; }
+
+.footer {
+  font-family: "Droid Serif", serif;
+  background-color: #3f3f44;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  color: #f7f7f7;
+  font-size: 12px;
+  padding: 0 0 29px 12px; }
+  .footer .footer-list {
+    list-style: none;
+    padding-left: 0px; }
+    .footer .footer-list .footer-list-item {
+      margin: 8px 11px; }
+      .footer .footer-list .footer-list-item > a > i {
+        color: #cceabb;
+        margin-right: 12px;
+        font-size: 20px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 104px;
+  font-family: "Droid Serif", serif;
+  line-height: 2; }
+  .form .form-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 39px; }
+  .form .form-complete .name {
+    position: relative; }
+    .form .form-complete .name > input {
+      width: 216px;
+      height: 27px;
+      padding-left: 28px;
+      border-radius: 5px;
+      border: 2px solid #cceabb; }
+    .form .form-complete .name .icon-user {
+      position: absolute;
+      top: 8px;
+      left: 8px; }
+    .form .form-complete .name .icon-check {
+      display: none;
+      position: absolute;
+      top: 8px;
+      left: 227px;
+      color: green; }
+    .form .form-complete .name .icon-error {
+      display: none;
+      position: absolute;
+      top: 8px;
+      left: 227px;
+      color: red; }
+    .form .form-complete .name > input:valid + .icon-check {
+      display: block; }
+    .form .form-complete .name > input:invalid + .icon-error {
+      display: block; }
+  .form .form-complete .email {
+    position: relative; }
+    .form .form-complete .email > input {
+      width: 216px;
+      height: 27px;
+      padding-left: 28px;
+      border-radius: 5px;
+      border: 2px solid #cceabb; }
+    .form .form-complete .email .icon-email {
+      position: absolute;
+      top: 8px;
+      left: 8px; }
+  .form .form-options {
+    margin: 11px 0; }
+    .form .form-options > select {
+      width: 91px;
+      height: 30px;
+      font-family: "Droid Serif", serif;
+      border-radius: 5px;
+      border: 2px solid #cceabb; }
+  .form fieldset {
+    width: 405px;
+    border-radius: 5px;
+    border: 2px solid #cceabb; }
+  .form .message > textarea {
+    width: 242px;
+    border-radius: 5px;
+    border: 2px solid #cceabb; }
+  .form .form-button {
+    width: 103px;
+    height: 38px;
+    border-radius: 5px;
+    color: #3f3f44;
+    background-color: #cceabb;
+    font-family: "Droid Serif", serif; }
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 69px 44px; }
+  .projects .projects-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 39px; }
+  .projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Droid Serif", serif; }
+    .projects .projects-container .project-box {
+      width: 50%;
+      text-align: center; }
+      .projects .projects-container .project-box > a > img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down; }
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 69px 44px;
+  background-color: #cceabb;
+  box-shadow: 10px 0px 27px 10px gray; }
+  .skills .skills-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 39px; }
+  .skills .container-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0 120px; }
+    .skills .container-skills .skill-box {
+      width: 15%;
+      height: 200px;
+      margin: 26px 11px;
+      font-family: "Droid Serif", serif; }
+      .skills .container-skills .skill-box:hover {
+        transform: translateY(-16px);
+        transition: 0.4s; }
+      .skills .container-skills .skill-box > img {
+        width: 100%;
+        object-fit: scale-down;
+        height: 100%; }
+
+a {
+  text-decoration: none;
+  color: #f7f7f7; }
+
+.icon-skills {
+  position: absolute;
+  transition: 0.3s;
+  bottom: -21px;
+  left: 6px; }
+  .icon-skills:hover {
+    bottom: 18px; }
+
+.icon-contact {
+  position: absolute;
+  left: 20px;
+  bottom: -21px;
+  transition: 0.3s; }
+  .icon-contact:hover {
+    bottom: 18px; }
+
+.icon-project {
+  position: absolute;
+  transition: 0.3s;
+  bottom: -21px;
+  left: 17px; }
+  .icon-project:hover {
+    bottom: 18px; }
+
+body {
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */

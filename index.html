@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="title-site">Angelette Turne</title>
+    <link type="text/css" rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a href="#home"><span>Sobre mí</span></a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#skills">
+                <span
+                  >Skills <i class="icon-skills fas fa-graduation-cap"></i
+                ></span>
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#projects">
+                <span
+                  >Proyectos
+                  <i class="icon-project far fa-folder-open"></i>
+                </span>
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#form">
+                <span
+                  >Contacto
+                  <i class="icon-contact fas fa-envelope-open-text"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <br />
+
+      <main class="about">
+        <a name="home"></a>
+        <h1 class="about-title">Angelette Turne Agüero</h1>
+        <p class="about-info">
+          Frontend Dev. - Lic. En Relaciones Públicas - Closed Captioner
+          <br />
+          Humana de Muralito
+        </p>
+        <img class="about-img" src="./images/myself2.jpg" />
+      </main>
+
+      <section class="projects">
+        <h1 class="projects-title">Proyectos</h1>
+        <a name="projects"></a>
+        <div class="projects-container">
+          <article class="project-box">
+            <a href="https://layouttp.netlify.app/"
+              ><img src="./images/layoutTP.jpg"
+            /></a>
+
+            <h3>Layout Corporate</h3>
+            <span>HTML - SASS</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h1 class="skills-title">Skills</h1>
+        <a name="skills"></a>
+        <div class="container-skills">
+          <div class="skill-box">
+            <img src="./images/bootstrap.png" alt="bootstrap" />
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/css.png" alt="css" />
+            <span>CSS</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/firebase.png" alt="firebase" />
+            <span>Firebase</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/git.png" alt="github" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/html.png" alt="html" />
+            <span>HTML</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/js.png" alt="javascript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/react.png" alt="react" />
+            <span>React</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/responsive.png" alt="responsive" />
+            <span>Responsive</span>
+          </div>
+          <div class="skill-box">
+            <img src="./images/sass.png" alt="sass" />
+            <span>Sass</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <a name="form"></a>
+        <h1 class="form-title">Contacto</h1>
+        <form action="https://formsubmit.co/angie.tur@gmail.com">
+          <div class="form-complete">
+            <label for="name">Nombre</label>
+            <div class="name">
+              <input
+                type="text"
+                id="name"
+                name="username"
+                placeholder="Ingrese su nombre"
+                minlength="3"
+                required
+              />
+              <i class="icon-check far fa-check-circle"></i>
+              <i class="icon-error fas fa-times"></i>
+              <i class="icon-user fas fa-user"></i>
+            </div>
+            <label for="email">Dirección de email</label>
+            <div class="email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="correo@gmail.com"
+                required
+              />
+              <i class="far fa-envelope icon-email"></i>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label for="know">¿Cómo me conociste?</label>
+            <select name="know" id="know">
+              <option value="linkedin">Linkedin</option>
+              <option value="twitter">Twitter</option>
+              <option value="facebook">Facebook</option>
+              <option value="referidos">Referidos</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Motivo</legend>
+            <input type="radio" name="motivo" id="motivo" />
+            <label for="motivo">Propuesta de trabajo</label>
+            <input type="radio" name="motivo" id="motivo" />
+            <label for="motivo">Consulta</label>
+            <input type="radio" name="motivo" id="motivo" />
+            <label for="motivo">Otro</label>
+          </fieldset>
+          <div class="message">
+            <legend for="message">Mensaje</legend>
+            <textarea
+              name="message"
+              id="message"
+              cols=""
+              rows=""
+              placeholder="Escriba aquí su mensaje"
+              required
+            ></textarea>
+            <br />
+            <button class="form-button" type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="https://github.com/angieTu">
+              <i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="footer-list-item">
+            <a href="https://www.instagram.com/angie30__"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="footer-list-item">
+            <a href="https://twitter.com/ang_ita_"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="footer-list-item">
+            <a href="mailto:angie.tur@gmail.com"
+              ><i class="fas fa-at"></i>angie.tur@gmail.com</a
+            >
+          </li>
+        </ul>
+        <span>
+          © 2020 - Todos los derechos reservados
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
