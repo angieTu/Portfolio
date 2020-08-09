@@ -15,6 +15,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <body>
@@ -145,89 +163,97 @@
       <a name="form"></a>
       <section class="form">
         <h1 class="form-title">Contacto</h1>
-        <form action="https://formsubmit.co/angie.tur@gmail.com" method="POST">
-          <div class="form-complete">
-            <label for="name">Nombre</label>
-            <div class="name">
-              <input
-                type="text"
-                id="name"
-                name="username"
-                placeholder="Ingrese su nombre"
-                minlength="3"
-                required
-              />
-              <i class="icon-check far fa-check-circle"></i>
-              <i class="icon-error fas fa-times"></i>
-              <i class="icon-user fas fa-user"></i>
+        <div class="form-container">
+          <div class="form-img-container">
+            <img class="form-img" src="images/myself.jpg" />
+          </div>
+          <form
+            action="https://formsubmit.co/angie.tur@gmail.com"
+            method="POST"
+          >
+            <div class="form-complete">
+              <label for="name">Nombre</label>
+              <div class="name">
+                <input
+                  type="text"
+                  id="name"
+                  name="username"
+                  placeholder="Ingrese su nombre"
+                  minlength="5"
+                  required
+                />
+                <i class="icon-check far fa-check-circle"></i>
+                <i class="icon-error fas fa-times"></i>
+                <i class="icon-user fas fa-user"></i>
+              </div>
+              <label for="email">Dirección de email</label>
+              <div class="email">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@email.com"
+                  required
+                />
+                <i class="far fa-envelope icon-email"></i>
+              </div>
             </div>
-            <label for="email">Dirección de email</label>
-            <div class="email">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="correo@gmail.com"
-                required
-              />
-              <i class="far fa-envelope icon-email"></i>
+            <div class="form-options">
+              <label for="know">¿Cómo me conociste?</label>
+              <select name="know" id="know">
+                <option value="linkedin">Linkedin</option>
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="referidos">Referidos</option>
+                <option value="otros">Otros</option>
+              </select>
             </div>
-          </div>
-          <div class="form-options">
-            <label for="know">¿Cómo me conociste?</label>
-            <select name="know" id="know">
-              <option value="linkedin">Linkedin</option>
-              <option value="twitter">Twitter</option>
-              <option value="facebook">Facebook</option>
-              <option value="referidos">Referidos</option>
-              <option value="otros">Otros</option>
-            </select>
-          </div>
-          <fieldset>
-            <legend>Motivo</legend>
-            <input type="radio" name="motivo" id="motivo" />
-            <label for="motivo">Propuesta de trabajo</label>
-            <input type="radio" name="motivo" id="motivo" />
-            <label for="motivo">Consulta</label>
-            <input type="radio" name="motivo" id="motivo" />
-            <label for="motivo">Otro</label>
-          </fieldset>
-          <div class="message">
-            <legend for="message">Mensaje</legend>
-            <textarea
-              name="message"
-              id="message"
-              cols=""
-              rows=""
-              placeholder="Escriba aquí su mensaje"
-              required
-            ></textarea>
-            <br />
-            <button class="form-button" type="submit">Enviar</button>
-          </div>
-        </form>
+            <fieldset>
+              <legend>Motivo</legend>
+              <input type="radio" name="motivo" id="motivo" />
+              <label for="motivo">Propuesta de trabajo</label>
+              <input type="radio" name="motivo" id="motivo" />
+              <label for="motivo">Consulta</label>
+              <input type="radio" name="motivo" id="motivo" />
+              <label for="motivo">Otro</label>
+            </fieldset>
+            <div class="message">
+              <legend for="message">Mensaje</legend>
+              <textarea
+                name="message"
+                id="message"
+                cols=""
+                rows=""
+                placeholder="Escriba aquí su mensaje"
+                required
+              ></textarea>
+              <br />
+              <button class="form-button" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
       </section>
 
       <footer class="footer">
         <ul class="footer-list">
           <li class="footer-list-item">
             <a href="https://github.com/angieTu">
-              <i class="fab fa-github"></i
-            ></a>
+              <i class="fab fa-github"></i>/ angieTu</a
+            >
           </li>
           <li class="footer-list-item">
             <a href="https://www.instagram.com/angie30__"
-              ><i class="fab fa-instagram"></i
-            ></a>
+              ><i class="fab fa-instagram"></i>@angie30__</a
+            >
           </li>
           <li class="footer-list-item">
             <a href="https://twitter.com/ang_ita_"
-              ><i class="fab fa-twitter"></i
-            ></a>
+              ><i class="fab fa-twitter"></i>@ang_ita_</a
+            >
           </li>
           <li class="footer-list-item">
             <a href="mailto:angie.tur@gmail.com"
-              ><i class="fas fa-at"></i>angie.tur@gmail.com</a
+              ><i class="far fa-envelope"></i>angie.tur@gmail.com</a
             >
           </li>
         </ul>

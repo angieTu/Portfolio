@@ -26,6 +26,12 @@
         position: relative;
         width: 65px;
         height: 49px;
+
+        & > a > span:hover {
+          & > i {
+            bottom: 18px;
+          }
+        }
       }
     }
   }

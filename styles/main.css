@@ -23,6 +23,8 @@
         position: relative;
         width: 65px;
         height: 49px; }
+        .header .header-nav .header-nav-list .header-nav-list-item > a > span:hover > i {
+          bottom: 18px; }
 
 .about {
   margin-top: 50px;
@@ -39,7 +41,6 @@
     font-family: "Roboto", sans-serif;
     font-size: 39px; }
   .about .about-img {
-    height: 21%;
     width: 20%; }
 
 .footer {
@@ -66,73 +67,85 @@
   flex-direction: column;
   padding: 38px 104px;
   font-family: "Droid Serif", serif;
-  line-height: 2; }
+  line-height: 2;
+  align-items: center; }
+  .form form {
+    width: 90%; }
   .form .form-title {
     font-family: "Roboto", sans-serif;
     font-size: 39px; }
-  .form .form-complete .name {
-    position: relative; }
-    .form .form-complete .name > input {
-      width: 216px;
-      height: 27px;
-      padding-left: 28px;
+  .form .form-container {
+    display: flex; }
+    .form .form-container .form-img-container {
+      width: 21%;
+      padding-right: 104px;
+      display: flex; }
+      .form .form-container .form-img-container .form-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .form .form-container .form-complete .name {
+      position: relative; }
+      .form .form-container .form-complete .name > input {
+        width: 95%;
+        height: 27px;
+        padding-left: 28px;
+        border-radius: 5px;
+        border: 2px solid #cceabb; }
+      .form .form-container .form-complete .name .icon-user {
+        position: absolute;
+        top: 8px;
+        left: 8px; }
+      .form .form-container .form-complete .name .icon-check {
+        display: none;
+        position: absolute;
+        top: 8px;
+        left: 227px;
+        color: green; }
+      .form .form-container .form-complete .name .icon-error {
+        display: none;
+        position: absolute;
+        top: 8px;
+        left: 227px;
+        color: red; }
+      .form .form-container .form-complete .name > input:valid + .icon-check {
+        display: block; }
+      .form .form-container .form-complete .name > input:invalid + .icon-error {
+        display: block; }
+    .form .form-container .form-complete .email {
+      position: relative; }
+      .form .form-container .form-complete .email > input {
+        width: 95%;
+        height: 27px;
+        padding-left: 28px;
+        border-radius: 5px;
+        border: 2px solid #cceabb; }
+      .form .form-container .form-complete .email .icon-email {
+        position: absolute;
+        top: 8px;
+        left: 8px; }
+    .form .form-container .form-options {
+      margin: 11px 0; }
+      .form .form-container .form-options > select {
+        width: 91px;
+        height: 30px;
+        font-family: "Droid Serif", serif;
+        border-radius: 5px;
+        border: 2px solid #cceabb; }
+    .form .form-container fieldset {
       border-radius: 5px;
       border: 2px solid #cceabb; }
-    .form .form-complete .name .icon-user {
-      position: absolute;
-      top: 8px;
-      left: 8px; }
-    .form .form-complete .name .icon-check {
-      display: none;
-      position: absolute;
-      top: 8px;
-      left: 227px;
-      color: green; }
-    .form .form-complete .name .icon-error {
-      display: none;
-      position: absolute;
-      top: 8px;
-      left: 227px;
-      color: red; }
-    .form .form-complete .name > input:valid + .icon-check {
-      display: block; }
-    .form .form-complete .name > input:invalid + .icon-error {
-      display: block; }
-  .form .form-complete .email {
-    position: relative; }
-    .form .form-complete .email > input {
-      width: 216px;
-      height: 27px;
-      padding-left: 28px;
+    .form .form-container .message > textarea {
+      width: 99%;
       border-radius: 5px;
       border: 2px solid #cceabb; }
-    .form .form-complete .email .icon-email {
-      position: absolute;
-      top: 8px;
-      left: 8px; }
-  .form .form-options {
-    margin: 11px 0; }
-    .form .form-options > select {
-      width: 91px;
-      height: 30px;
-      font-family: "Droid Serif", serif;
+    .form .form-container .form-button {
+      width: 103px;
+      height: 38px;
       border-radius: 5px;
-      border: 2px solid #cceabb; }
-  .form fieldset {
-    width: 405px;
-    border-radius: 5px;
-    border: 2px solid #cceabb; }
-  .form .message > textarea {
-    width: 242px;
-    border-radius: 5px;
-    border: 2px solid #cceabb; }
-  .form .form-button {
-    width: 103px;
-    height: 38px;
-    border-radius: 5px;
-    color: #3f3f44;
-    background-color: #cceabb;
-    font-family: "Droid Serif", serif; }
+      color: #3f3f44;
+      background-color: #cceabb;
+      font-family: "Droid Serif", serif; }
 
 .projects {
   display: flex;
@@ -160,7 +173,7 @@
         margin: -22px 0;
         border-radius: 10px;
         transition: 0.5s;
-        filter: grayscale(2); }
+        filter: grayscale(74%); }
         .projects .projects-container .project-box > a > img:hover {
           filter: grayscale(0); }
 
@@ -202,25 +215,19 @@ a {
   position: absolute;
   transition: 0.3s;
   bottom: -21px;
-  left: 6px; }
-  .icon-skills:hover {
-    bottom: 18px; }
+  right: 0px; }
 
 .icon-contact {
   position: absolute;
-  left: 20px;
-  bottom: -21px;
-  transition: 0.3s; }
-  .icon-contact:hover {
-    bottom: 18px; }
+  transition: 0.3s;
+  bottom: -32px;
+  right: -21px; }
 
 .icon-project {
   position: absolute;
   transition: 0.3s;
   bottom: -21px;
-  left: 17px; }
-  .icon-project:hover {
-    bottom: 18px; }
+  left: 77px; }
 
 body {
   margin: 0; }

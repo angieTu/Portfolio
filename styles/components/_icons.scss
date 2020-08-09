@@ -2,31 +2,19 @@
   position: absolute;
   transition: 0.3s;
   bottom: -21px;
-  left: 6px;
-
-  &:hover {
-    bottom: 18px;
-  }
+  right: 0px;
 }
 
 .icon-contact {
   position: absolute;
-  left: 20px;
-  bottom: -21px;
   transition: 0.3s;
-
-  &:hover {
-    bottom: 18px;
-  }
+  bottom: -32px;
+  right: -21px;
 }
 
 .icon-project {
   position: absolute;
   transition: 0.3s;
   bottom: -21px;
-  left: 17px;
-
-  &:hover {
-    bottom: 18px;
-  }
+  left: 77px;
 }
