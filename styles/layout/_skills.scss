@@ -24,16 +24,21 @@
       height: 200px;
       margin: 26px 11px;
       font-family: $secondary-font;
+      transition: 0.3s;
 
       &:hover {
         transform: translateY(-16px);
-        transition: 0.4s;
       }
 
       & > img {
         width: 100%;
         object-fit: scale-down;
         height: 100%;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

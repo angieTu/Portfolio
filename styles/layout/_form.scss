@@ -47,30 +47,6 @@
           top: 8px;
           left: 8px;
         }
-
-        .icon-check {
-          display: none;
-          position: absolute;
-          top: 8px;
-          left: 227px;
-          color: green;
-        }
-
-        .icon-error {
-          display: none;
-          position: absolute;
-          top: 8px;
-          left: 227px;
-          color: red;
-        }
-
-        & > input:valid + .icon-check {
-          display: block;
-        }
-
-        & > input:invalid + .icon-error {
-          display: block;
-        }
       }
 
       .email {
@@ -96,7 +72,7 @@
       margin: 11px 0;
 
       & > select {
-        width: 91px;
+        width: 30%;
         height: 30px;
         font-family: $secondary-font;
         border-radius: 5px;
@@ -110,9 +86,12 @@
     }
 
     .message > textarea {
-      width: 99%;
+      width: 98%;
       border-radius: 5px;
       border: 2px solid $secondary-color;
+      padding: 5px 5px;
+      font-family: $secondary-font;
+      font-size: 12px;
     }
 
     .form-button {
@@ -122,6 +101,11 @@
       color: $main-color;
       background-color: $secondary-color;
       font-family: $secondary-font;
+
+      &:hover {
+        background-color: $main-color;
+        color: $secondary-color;
+      }
     }
   }
 }
