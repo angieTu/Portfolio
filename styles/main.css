@@ -132,7 +132,8 @@
       border-radius: 5px;
       color: #3f3f44;
       background-color: #cceabb;
-      font-family: "Droid Serif", serif; }
+      font-family: "Droid Serif", serif;
+      transition: 0.3s ease-in; }
       .form .form-container .form-button:hover {
         background-color: #3f3f44;
         color: #cceabb; }
@@ -164,11 +165,11 @@
           height: 100%;
           object-fit: cover;
           margin: -22px 0;
-          border-radius: 10px;
-          transition: 0.5s;
+          transition: 0.5s ease-in;
           filter: grayscale(74%); }
           .projects .projects-container .project-box .img-container .img-project:hover {
-            filter: grayscale(0); }
+            filter: grayscale(0);
+            transform: scale(1.1); }
 
 .skills {
   display: flex;
@@ -192,15 +193,14 @@
       height: 200px;
       margin: 26px 11px;
       font-family: "Droid Serif", serif;
-      transition: 0.3s; }
+      transition: 0.3s ease-in; }
       .skills .container-skills .skill-box:hover {
-        transform: translateY(-16px);
-        cursor: pointer; }
+        transform: translateY(-16px); }
       .skills .container-skills .skill-box > img {
         width: 100%;
         object-fit: scale-down;
         height: 100%;
-        transition: 0.3s; }
+        transition: 0.3s ease-in; }
         .skills .container-skills .skill-box > img:hover {
           transform: scale(1.1); }
 

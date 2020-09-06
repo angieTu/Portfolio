@@ -101,6 +101,7 @@
       color: $main-color;
       background-color: $secondary-color;
       font-family: $secondary-font;
+      transition: 0.3s ease-in;
 
       &:hover {
         background-color: $main-color;
